@@ -1,0 +1,5 @@
+CHI_BEWD1 - week 1 homework: "What I learned on 9/22"
+
+This class ended up being mostly review for me, but that's because I spent a lot of time doing the pre-work. I was familiar with commands such as cd, mkdir, and a range of git commands so it was all good to A) have them reinforced and B) get a little more practice. 
+
+I did get a better understanding of what a Pull Request is. I hear the term all the time at work, and I'd envisioned it more as someone working on the master branch and slurping IN work, rather than someone pushing it to master and getting the okay. 

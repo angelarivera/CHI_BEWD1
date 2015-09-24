@@ -1,0 +1,8 @@
+Homework Week 1
+Phil Dziedzic
+
+In the first class, I got more familiar with using the command line, and running basic commands that I will be using on a regular basis. I also have a more clear understanding of the difference between Git and GitHub, and I’m familiar with what a Remote repository is.
+
+I also learned the difference between adding files, committing, and pushing. Additionally, I now know what a pull request is! In fact, I’m about to figure out how to execute one for this homework.
+
+So far so good, and excited to learn more.

@@ -1,0 +1,25 @@
+> On our first day of class we learned about the command line (Terminal), Git, GitHub, and commands for using Git. 
+
+> We also discused folder structure using terminal. 
+	1. Understanding folder structure by creating, removing, accessing, and removing directories and files.
+	2. We use commands like mkdir, rmdir, cd, pwd, ls, touch, etc. 
+
+> The difference bewtween Front-End Development and Back-End Development.
+	1. Front-End works more with the text, styling, and interactivity of the website. Basically what we see on the webpage. We use HTML, CSS, and JS to make these functions work.  
+	2. Back-End focuses on 'behind the scenes' functions that make our application work. We use server side code such as Python, Ruby, C#, PHP and others to make the magic happen.
+
+> Git is a source control management tool used by many developers to colloborate on projects where they can make changes in a structured manner. 
+	1.  We use commands in git in order for developers to execute their work. 
+	2. init, add, commit -m, push, pull, etc. 
+
+> GitHub is a service that developers use to host Git repo's in the cloud. 
+	1. GitHub allows developers to distribute their code by sharing their repositories. 
+	2. It allows us to view code online. 
+
+> GitHub 'Forks'
+	1. Forking allows us to make a copy of someone else's project. It acts as a bridge between the original repo and our personal copy. 
+	2. We can submit Pull request to make changes to other people's code. 
+	3. We can clone the project onto out desktop. 
+	4. We commit our changes.
+	5. Push them to our repository.
+
