@@ -1,4 +1,108 @@
-I learned, James is smart. And using a LS tree makes it easier to visualize directories. 
+I learned using an LS tree makes it easier to visualize directories. 
 I also learned how to set up a git remote so that I could pull down from the git repository for the class. 
-I created a remote called instructor and that links back to the instructors git repository, so that I can pull the contents down once its changed. 
+I created a remote called upstream and that links back to the instructors git repository, so that I can pull the contents down once its changed. 
 This also allows for me to easily create pull requests from my fork (this remote is called origin). 
+
+
+
+# 1. Iterate over each item
+running_total = 0
+for each price 
+	# 2. Add the prices together 
+	running_total = running_total + price
+# 3. Apply a discount
+if discount 
+	running_total = running_total - 10
+
+# 4. Display total cost Show a price
+puts running_total
+
+*puts is a ruby method. Short for outputs. Whatever you pass to puts gets displayed on the screen
+
+
+## 2. Counting things
+
+You've been given a list of the names of politicians and celebrities. You need to count how many celebrities are in the list while skipping over politicians. Using computational thinking, list the steps needed to iterate over each item in the list and increment a counter when the current name on the list is a celebrity.
+
+couting how many celebrities are on the list 
+
+Create name list var= celebrities 
+Celebrities= 'Kim Kardashian', 'Hulk Hogan', 'Kermit the Frog', 'Matt Lauer'
+Create name list var= politicans
+Politician= 'Donald Trump', 'Barack Obama', 'Hilary Clinton' 
+Running total is 0 
+If 'is_celebrity?' is true then running_total +1
+
+Assumptions and tips:
+
+- Let's assume there's a function called `is_celebrity?` that will return `true` or `false` based on whether the name you give it is that of a celebrity
+- The list of names are: `['Kim Kardashian', 'Hulk Hogan', 'Kermit the Frog', 'Donald Trump', 'Matt Lauer', 'Barack Obama', 'Hillary Clinton']`
+
+Back-End Web Development - Homework #1
+#
+# Secret Number is a game you will build in two parts.
+# The purpose of the game is to have players guess a secret number from 1-10.
+#
+# Read the instructions below.
+# This exercise will test your knowledge of Variables and Conditionals.
+#
+###############################################################################
+#
+# We're ready to program! To practice our Ruby skills lets create a secret number game. 
+# In this game players have three tries to guess a secret number between 1 and 10. 
+#
+# Here are some guidelines to building your game:
+#
+# Intros
+#   - Welcome the player to your game. Let them know who created the game. 
+#   - Ask for the player's name then personally greet them by printing to the screen, "Hi player_name!"
+#   - Any good game will communicate the rules. Let the player know they must guess a number between 1 and 10 
+#   and that they only have 3 tries to do so.
+#
+# Functionality: 
+#  -  Hard code the secret number. Make it a random number between 1 and 10.
+#  -  Ask the user for their guess.
+#  -  Verify if they were correct. If the player guesses correctly they win the game they should be congratulated and the game should end.
+#  -  If they guess incorrectly, give the player some direction. If they guess too high let them know, if they guess too low, let them know.
+#  -  Don't forget to let your players know how many guesses they have left. Your game should say something like
+#     "You have X many guesses before the game is over enter a another number"
+#  -  If they don't guess correctly after 3 tries, print that the Player lost and the game is over. Also let them know what the `secret_number` was.
+#
+# Make sure to add helpful comments to your code to document what each section does.
+# 
+# Remember to cast input from the Player into the appropriate data type.
+#
+###############################################################################
+
+def = get_input 
+
+puts "Welcome! This game has been created by Angie"
+puts "What is your name?"
+puts "Hi 'name'!"
+name = get_input
+puts "I'm thinking of a random number from 1 to 100"
+puts "Try to guess what the number is"
+
+loop do
+puts "What is your guess?"
+
+unlesss guess == 99
+puts "You got it!"
+
+message = if guess > 99
+puts "Too high!"
+
+message = if guess < 99
+puts "Too low!"
+
+end 
+
+
+
+
+
+
+
+
+
+
