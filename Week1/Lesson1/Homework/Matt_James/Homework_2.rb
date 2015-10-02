@@ -17,15 +17,39 @@
 #
 # Intros
 #   - Welcome the player to your game. Let them know who created the game. 
+puts "Guess a Damn Number! \n by Dash323"
+sleep 3
 #   - Ask for the player's name then personally greet them by printing to the screen, "Hi player_name!"
+puts "Name?"
+name = gets
+sleep 1
+puts "Wow! #{name} is a stupid name."
 #   - Any good game will communicate the rules. Let the player know they must guess a number between 1 and 10 
 #   and that they only have 3 tries to do so.
+puts "I have a secret number and you have three trys to guess the number."
 #
 # Functionality: 
 #  -  Hard code the secret number. Make it a random number between 1 and 10.
+secret_number = 4
 #  -  Ask the user for their guess.
+puts "Guess a damn number!"
+guess1 = gets
 #  -  Verify if they were correct. If the player guesses correctly they win the game they should be congratulated and the game should end.
+if guess1 = secret_number
+	puts "You got it"
 #  -  If they guess incorrectly, give the player some direction. If they guess too high let them know, if they guess too low, let them know.
+elsif guess1 < secret_number && guess1 > 0
+ 	 puts "NOPE! higher"
+
+elsif guess1 > secret_number && guess1 < 11 
+	puts "NOPE! lower"
+
+elsif guess1 > 10 
+	puts "Really!? ... Not within range"
+
+else	puts "Really!? ... Not within range"
+end
+
 #  -  Don't forget to let your players know how many guesses they have left. Your game should say something like
 #     "You have X many guesses before the game is over enter a another number"
 #  -  If they don't guess correctly after 3 tries, print that the Player lost and the game is over. Also let them know what the `secret_number` was.
@@ -35,4 +59,3 @@
 # Remember to cast input from the Player into the appropriate data type.
 #
 ###############################################################################
-

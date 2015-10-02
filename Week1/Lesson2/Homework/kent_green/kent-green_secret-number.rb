@@ -36,3 +36,41 @@
 #
 ###############################################################################
 
+#set secret_number
+number = 6
+guess_count = 0
+
+#Welcome-message
+puts 'Welcome to Secret Number, the game where you guess a secret number!'
+puts '~a kent green joint~'
+
+#Asking for player name
+puts 'What is your name?' 
+ player_name = gets
+puts 'Hi ' + player_name + ' good luck today!' 
+
+#explain the rules
+puts 'You have three chances to guess the Secret Number. Fame and fortune await!'
+
+###ok
+
+#start the game
+while guess_count < 3 do
+	puts 'What is your guess?'
+ 	guess = gets.chomp.to_i
+ 	guess_count += 1
+
+#set clue logic
+	if guess > number
+		puts 'Whoa, too high!'
+	elsif guess < number 
+		puts 'Too low. Go big or go home.'
+	else
+		puts "You've guessed the Secret Number! Tell all your friends!"
+		break
+	end
+
+	if guess_count >= 3
+		puts 'You did not guess the Secret Number. Your descendents will live in shame.'
+	end
+end

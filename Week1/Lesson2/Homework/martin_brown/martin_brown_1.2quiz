@@ -1,0 +1,16 @@
+Class 1.2 QUIZ
+
+1. How do I change directories?
+	a: cd [directory name]
+		cd ../ - take back 1 directory 
+2. what is a git and what is git hub
+	a: git is a snap shot of a version of file, helps with version control. Hit hub is a repository for this information
+3.how do I add file to git?
+	a:
+	-git add [file_name]
+	-git commit -m"message of what was changed"
+	-git push origin master
+4. What is a git hub repository?
+	a:where your local git reposiutory is hoasted and shared publicly
+5.What is the correct was to push
+	a: get push origin master

@@ -38,71 +38,89 @@
 
 #welcome message
 def print_welcome
-	"Welcome to the number game! This game was created by Michael Halgas"
+	puts "Welcome to the number game! This game was created by Michael Halgas."
 end
 
 #get player's name
 def get_player_name
-	puts "What's your name player?"
+	puts "What's your name, player?"
 	gets.strip
 end
 
 #say hi and explain the game
 def ready_start(name)
-	"Hello #{name}! Guess a number between 1 and 10. You have 3 attempts to guess the SECRET NUMBER!"
+	puts "Hello #{name}! Guess a number between 1 and 10. You have 3 attempts to guess the SECRET NUMBER!"
 end
 
 #start guess count
-try = 0
+try = 3
 
 #count attempts 
-def get_try(try, number)
+def get_try(try, number, name)
 	if try == 1
-		"You have 2 attempts remaining, player"
+		puts "You have 2 attempts remaining, #{name}"
 	elsif try == 2
-		"You have 1 attempt remaining, player"
+		puts "You have 1 attempt remaining, #{name}"
 	else try == 3
-		"Game over, player. The secret number is #{number}"
+		puts "Game over, #{name}. The secret number is #{number}"
 	end
 end
 
 #get player's guess
-def get_player_guess
-	puts "What's your guess player?"
+def get_player_guess(name)
+	puts "What's your guess, #{name}?"
 	gets.to_i
 end
 
-#define secret number
+#set beginning conditions
+correct = 0
 secret_number = 6
 
-#define variables
-number = secret_number
-guess = get_player_guess
-
 #calculate response 
-def calc_response(nubmer, guess)
-	if number > guess
-		"Too low, player."
-	elsif number > guess
-		"Too high, player"
-	else number == guess
-		"Just right, player. You can stop now."
+def calc_response(secret_number, guess, name, try)
+	if secret_number > guess
+		puts "Too low, #{name}. you have #{try} attempts remaining"
+	elsif secret_number < guess
+		puts "Too high, #{name}"
+	else secret_number == guess
+		puts "Nice job, #{name}! You guessed the Secret Number! Try again sometime... if you dare!"
 	end
 end
+
+#calculate last guess response
+def calc_last_guess(secret_number, last_guess, name, try)
+	if secret_number > last_guess
+		puts "Too low, #{name}. You have #{try} attempts remaining. The secret number was #{secret_number}."
+	elsif secret_number < last_guess
+		puts "Too high, #{name}. You have #{try} attempts remaining. The secret number was #{secret_number}."
+	else secret_number == last_guess
+		puts "Nice job, #{name}! You guessed the Secret Number! Try again sometime... if you dare!"
+	end
+end
+
+
 
 #run the game
 print_welcome
 name = get_player_name
 ready_start(name)
-guess = get_player_guess
-calc_response(number, guess)
-try += 1
-get_try(try, number)
-guess = get_player_guess
-calc_response(number, guess)
-try += 1
-get_try(try, number)
-guess = get_player_guess
-calc_response(number, guess)
-try += 1
-get_try(try, number)
+
+while try > 0 && correct == 0 
+	if try > 1
+		try -= 1
+		guess = get_player_guess(name)
+		calc_response(secret_number, guess, name, try)
+			if secret_number == guess
+				correct += 1
+			end
+	else try == 1 
+		puts "Last try! What's your guess #{name}?"
+		last_guess = gets.to_i
+		try -= 1
+		calc_last_guess(secret_number, last_guess, name, try)
+			if secret_number == guess
+				correct += 1
+			end
+	end
+end	
+

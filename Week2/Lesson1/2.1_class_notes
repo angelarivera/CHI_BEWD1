@@ -1,0 +1,114 @@
+2.1 Class notes:
+
+what is a git repository- 
+
+what is a git remote?
+	-easy online access, non local version, colaborative space. drop box for developers but store version in the cloud
+what is a git hub fork?
+	-clone of the master that you are only impacting.
+What does a pull request do
+	-pull down from master so you can see there changes and your changes and merge them
+	- data can come down from original but can't go up
+what are the steps to send change from local reso to your remote on github
+	-git add
+	-git commit -m"messge"
+	-git push origin master 
+	-git bush [remote][master
+
+Ruby review
+
+what does 'puts' method do
+	-puts stuff on the scream
+two build in methods .[something] of string type?
+	-length
+	-capitalize 
+	-upcase- caps entire string 
+What are the ruby types
+	-"hello"- string 
+	-true-bulian
+	-235-fixnum
+	-3.14-float
+
+Ruby Quiz:
+
+def multiplier (x,y)- starts 
+	result= x*y- variable to hold result, makes faster 
+	if result >50
+	puts "over 50"
+	elsif result <50- use elsif only if more then 2 conditions
+	puts 'underfift'
+	else 
+	puts "equal to 50"
+
+
+NEW STUFF
+ITERATION(ruby spesific)
+
+3.upto(3) do |num|
+	puts "#{num}. going"
+end 
+ .upto method justincriments by 1's
+ .downto
+
+results-
+#1.going
+#2.going 
+#3.going 
+
+.. what is a block?
+	-everything between "do" and "end". unnamed function that runs by its self. prefaced by do
+	-methods determins value of block.
+
+
+Conditional Loops
+
+count=10
+while count > 0
+	put "looping"
+	count-=1
+end
+
+until oposit of while
+
+loop do
+	break if count <1
+99.times
+
+
+for this clas focus on while and each. most important loops
+
+ITERATIOrecap- allows us to keep our code DRY(doing thing over and over again)
+
+repeating lines of functionality.
+
+ARRAYS-find by index
+how to make
+a=[]
+
+a=Array.new
+
+array is a ruby type unto its self
+arrays are just a list of values, get it by index
+
+ex) a=['nyc','la']
+	index are a position is an arrow. index of LA is 1, ny is 0
+	how to pull out by index:
+	a[1]#=la
+	want last idem in array a[-1]= last idem
+	could also do array.last
+
+	! band method- makes change permanent
+	? bulian method- checks if true 
+	a << adds thing to array OR
+	a.push addings things to the end of the array
+	a.unshift, adds new element to aray
+	a.shift, removes first from array
+	a.pop, takes out last thing in array and gives it to you
+	a.uniq- return aray without duplicates
+	a.uniq!- remove array with dups removed and b now have unique values
+	a.join ','- converts an array into a string
+		websites dont take an array, they take string- use this for convert stuff for web aps
+	s.split ''- turns string into an array
+	1.to_s- turns num into string
+	.clear removes all elements from the array
+	

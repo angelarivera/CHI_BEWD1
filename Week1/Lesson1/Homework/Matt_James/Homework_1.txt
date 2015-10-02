@@ -1,0 +1,3 @@
+I seem to understand the basics of Ruby (Lesson 2 material), but I am still trying to figure out the whole "git", "push", "pull", "remote", and "directory" thing. 
+
+As I am doing the homework, I am slowy but surely understanding all the "git" stuff.

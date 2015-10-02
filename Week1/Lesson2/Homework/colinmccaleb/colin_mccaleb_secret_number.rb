@@ -36,3 +36,45 @@
 #
 ###############################################################################
 
+GUESS_NUMBER = 3
+NUMBER = 6
+
+puts "Hi, welcome to Ruby Roulette. This was created by Colin McCaleb."
+puts "To begin, please enter your First Name."
+name = gets.chomp
+
+puts
+puts "Hello #{name}."
+puts "You have three tries to guess the number. I will tell you if you are too low or too high."
+puts "Give me your best shot!"
+puts
+
+  
+  num_guesses = 1
+  
+  # GUESSING LOOP
+  loop do 
+    puts "Guess number #{num_guesses}. What is your guess?"
+    guess = gets
+
+    if guess.to_i < NUMBER
+      puts "Your guess was too low!"
+    elsif guess.to_i > NUMBER
+      puts "Your guess was too high!"
+    else
+      # If we get here, the guess was right!
+      puts "You got the number right! It was #{NUMBER}."
+      break
+    end
+  
+    if num_guesses >= 3
+      puts "You have exceeded the maximum number of guesses."
+      break
+    end
+    num_guesses += 1
+  end
+  
+  # REPLAY QUERY
+  puts "The game is over. The secret number was 6!"
+  puts "Press Return to escape game."
+puts "Cheers!"
