@@ -19,7 +19,7 @@
 > GitHub 'Forks'
 	1. Forking allows us to make a copy of someone else's project. It acts as a bridge between the original repo and our personal copy. 
 	2. We can submit Pull request to make changes to other people's code. 
-	3. We can clone the project onto out desktop. 
+	3. We can clone the project onto our desktop. 
 	4. We commit our changes.
 	5. Push them to our repository.
 

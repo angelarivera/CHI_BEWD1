@@ -1,0 +1,5 @@
+Git / Github has always been a bit of a mystery. Terminal as well. I’ve used them all and have a working knowledge, but never really felt like an expert. In the past, a back end developer has set me up with a Git account and I would push CSS and code updates to the origin folder using this account. 
+
+Today in class, I feel like I got a great foundation on how Git actually works. There are a few fundamentals: setting up an origin within git or another web host, setting up a local repository, and pushing those changes between local and origin. To do so we tell Git to track folders and files within terminal using git commands.  
+
+I learned how to create files and tell git to track those files / push the files to Github. 

@@ -1,0 +1,12 @@
+The first Tuesday in class covered three major topics.
+
+1. Back-end vs. Front-end development - Understanding the differences between front-end and Back-end development.  
+2. Command line terminal - Command line terminal fundamentals as well as basic commands to navigate directories.   
+3. Git and Github - Learn Git as a Source Control Management tool and Github as a location to store Git repositories.
+
+Practiced Git add, commit, and push, as well as concept of pull request. 
+
+
+Michael Haglas
+CHI_BEWD
+Week 1

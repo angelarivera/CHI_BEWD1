@@ -21,6 +21,8 @@ You should expect to find the current week's lesson added as a new folder to thi
 
 Each week's lesson folder will have a corresponding `Homework` folder. We'll all have a copy of this repository and permission to push to it and submit pull requests. So you'll add a folder with the first initial of your first name, an underscore, and your last name and then add your homework to the folder like this: if your name were John Smith the folder would be `j_smith`.
 
+Homework will generally be due one week after it was assigned unless otherwise specified.
+
 ## Exit Tickets
 
 Each week we ask that you fill out an Exit Ticket so we can make sure we're teaching the best class possible. You can find the link to [the very short survey here](https://docs.google.com/forms/d/1f3uiOqDMThtl77Vwm62KeNyBse41Ult93d0LjoyYt9A/viewform).
