@@ -1,0 +1,3 @@
+Homework 1
+
+## This week (actually last week, forgot to do this assignment..) I learned how to use git. This was pretty helpful because I was pretty unfamiliar, but it is used a lot at work.

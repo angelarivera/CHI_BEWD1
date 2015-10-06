@@ -52,9 +52,9 @@ categories = Array.new
 assert_equal categories, []
 
 # Add 3 stories to the categories array. Each time using a different method.
-categories <<("Music")
-categories.push("Weather")
-categories.unshift("Florida")
+categories << ("Music")
+categories.unshift ("Weather")
+categories.push ("Florida")
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
 # Ensure only unique categories get stored
@@ -65,7 +65,7 @@ assert_equal ["Florida", "Music", "Weather"], categories.sort
 # Write a conditional that adds "Family" to the category list if it includes both Animals, and Shopping
 categories << "Animals"
 
-if categories.include? 'Animals' && 'Shopping'
+if categories.include?("Shopping") && categories.include?("Animals")
   categories << "Family"
 end
 
@@ -74,7 +74,7 @@ assert_equal(false, categories.include?("Family"))
 categories << "Shopping"
 
 #repeat check here
-if categories.include? 'Animals' && 'Shopping'
+if categories.include?("Shopping") && categories.include?("Animals")
   categories << "Family"
 end
 
@@ -82,8 +82,8 @@ assert_equal(true, categories.include?("Family"))
 
 # Print all of the Array elements as a comma separated string in alphabetical order
 # persist the sorting of categories
-assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.sort!.join(", "))
-assert_equal(%w(Animals Family Florida Music Shopping Weather), categories)
+assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.sort.join(', '))
+assert_equal(%w(Animals Family Florida Music Shopping Weather), categories.sort!)
 
 # Remove the first category from the array and print it to the screen "First Category: Category here"
 first_category = categories.shift
@@ -98,7 +98,7 @@ assert_equal(4, categories.length) # get it's length
 
 # Write a conditional that clears the array if there are more than 5 categories and adds "Misc" to it.
 
-if categories.length > 5 #get it's length
+if categories.count > 5 #get it's length
   categories.clear # empty the array
   categories << "Misc"
 end
@@ -113,7 +113,7 @@ if categories.length > 5 #get it's length
   categories << "Misc"
 end
 
-assert_equal(1, categories.length) # get it's size
+assert_equal(1, categories.size) # get it's size
 assert_equal(["Misc"], categories)
 
 puts "YOU'RE DONE!"

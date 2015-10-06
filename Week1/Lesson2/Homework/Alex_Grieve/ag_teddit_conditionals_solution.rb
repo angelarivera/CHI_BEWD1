@@ -1,5 +1,5 @@
 # Global hash to archive the stories
-$story_archive = {}
+$story_archive = {} #----> 1
 
 # Get the user's input
 def get_input
@@ -9,7 +9,7 @@ end
 
 # Add categories to the archive
 def add_category(storyDict, category)
-	if not storyDict[category]
+	if not storyDict[category] #----> 2
 		storyDict[category] = []
 		result = "New Category"
 	else
@@ -99,3 +99,11 @@ while story != "q"
 	puts "#{upvotes[0]} story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes[1]}"
 end
 
+## FEEDBACK ##
+#
+# 0. First off, this is way more than I expected and totally correct.
+# 1. Good use of a global. Normally I'd say stay away from them but in this
+# case it made sense.
+# 2. You usually don't see a lot of `if not` in conditional code.
+# It would be more clear if you used `unless` or just a simple `if !variable_here`
+# instead.

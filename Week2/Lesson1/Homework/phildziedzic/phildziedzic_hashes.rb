@@ -24,24 +24,21 @@ students = [
   }
 ]
 
-some_array = ["blue", "green", "red", "purple"]
-some_array.each do |color|
-  puts color
-end
+# Explain this short syntax...
+students.each { |e|  }
 
 # Now show the more common syntax
-# students.each do |student|
-#   puts "Name: #{student[:name]}"
-#   puts "Class: #{student[:klass]}"
-#   puts "Grade: #{student[:grade]}"
-#   puts "========================="
-# end
+students.each do |student|
+  puts "Name: #{student[:name]}"
+  puts "Class: #{student[:klass]}"
+  puts "Grade: #{student[:grade]}"
+  puts ---------------------------
+end
 
 # Show iterating over key value pairs
-# students.each do |student|
-#   puts student
-#   student.each do |key, value|
-#     puts "#{key}: #{value}"
-#   end
-#   puts "========================"
-# end
+students.each do |student|
+  student.each do |key, value|
+    puts "#{k}: #{v}"
+  end
+  ----------------------------
+end

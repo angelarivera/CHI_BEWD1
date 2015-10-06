@@ -4,27 +4,26 @@
 # Complete the application below. 
 # Where you see comments (lines that begin with #) replace it with code so that the program works.
 
-# get input from user
 def get_input
-	gets
+   gets
 end
 
+start_upvotes = 1
+
 def calculate_upvotes(story, category)
-    # Write code so that:
-    def upvotes
+    if story.include? "cats" 
+    	upvotes = 1 * 6
+    elsif story.include? "bacon" 
+    	upvotes = 1 * 8
+    else story.include? "food"
+    	upvotes = 1 * 3
+    end
         # If the Story is about cats multiply the upvotes by 5
-        if category.include "cats"
-        	upvotes = upvotes * 5
-    	   end
         # If the Story is about bacon multiply the upvotes by 8
-        if category.include "bacon"
-        	upvotes = upvotes * 8
-    	  end
         # If the Story is about Food it gets 3 times the upvotes.
-        if category.include "Food"
-        	upvotes = upvotes * 3
-    	  end
-    puts upvotes
+
+    #For example:
+    # "Cats frolic despite tuna shortage" should give you 5 times the upvotes!
 end
 
 puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
@@ -36,10 +35,10 @@ upvotes = calculate_upvotes(story, category)
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
 
 ## FEEDBACK
-# Good work. This is almost right. A few problems.
-# First, keep track of your indentation. If its consistent you'll
-# be able to catch easy mistakes like a missing `end` keyword.
-# Also, you can't define a method inside of another method. Ask youself
-# why you're defining methods. It should be because there's a block of code
-# that's pretty generic and can be reused. You can call a method inside of another
-# method but you can't *define* a method within another method.
+# This works as expected but a few things could have been better. When
+# you use `gets` for input, you should call `.strip` on that variable to
+# remove any white space. Without that the output includes the line break from
+# when the user presses Enter to input their answers.
+# You also calculate the upvotes correctly but you were actually supposed to
+# compare it to the category, not the story. But its not a big deal, you calculated
+# the upvotes correctly anyway.

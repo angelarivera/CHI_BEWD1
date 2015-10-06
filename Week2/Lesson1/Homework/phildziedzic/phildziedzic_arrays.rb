@@ -52,9 +52,9 @@ categories = Array.new
 assert_equal categories, []
 
 # Add 3 stories to the categories array. Each time using a different method.
-categories <<("Music")
-categories.push("Weather")
-categories.unshift("Florida")
+categories.push("Music")
+categories.unshift("Weather")
+categories.insert(2, "Florida")
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
 # Ensure only unique categories get stored
@@ -65,7 +65,7 @@ assert_equal ["Florida", "Music", "Weather"], categories.sort
 # Write a conditional that adds "Family" to the category list if it includes both Animals, and Shopping
 categories << "Animals"
 
-if categories.include? 'Animals' && 'Shopping'
+if categories.include?("Animals") && categories.include?("Shopping")
   categories << "Family"
 end
 
@@ -74,7 +74,7 @@ assert_equal(false, categories.include?("Family"))
 categories << "Shopping"
 
 #repeat check here
-if categories.include? 'Animals' && 'Shopping'
+if categories.include?("Animals") && categories.include?("Shopping")
   categories << "Family"
 end
 
@@ -113,7 +113,7 @@ if categories.length > 5 #get it's length
   categories << "Misc"
 end
 
-assert_equal(1, categories.length) # get it's size
+assert_equal(1, categories.size) # get it's size
 assert_equal(["Misc"], categories)
 
 puts "YOU'RE DONE!"
