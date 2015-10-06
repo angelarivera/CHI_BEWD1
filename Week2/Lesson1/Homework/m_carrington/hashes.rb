@@ -47,7 +47,7 @@ forecast = [
 ]
 
 forecast.each do |entry|
-  puts "The weather for " + entry[:date] + " will be " + entry[:temp].to_s + " and " + entry[:desc] + "."
-  puts "Moon phase: " + entry[:moon_phase]
+  puts "The weather for #{entry[:date]} will be #{entry[:temp]} and #{entry[:desc]}."
+  puts "Moon phase: #{entry[:moon_phase]}"
   puts ""
 end

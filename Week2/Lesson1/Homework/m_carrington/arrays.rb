@@ -65,7 +65,7 @@ assert_equal ["Florida", "Music", "Weather"], categories.sort
 # Write a conditional that adds "Family" to the category list if it includes both Animals, and Shopping
 categories << "Animals"
 
-if categories.include? "Animals" && "Shopping"
+if categories.include?("Animals") && categories.include?("Shopping")
   categories << "Family"
 end
 
@@ -74,7 +74,7 @@ assert_equal(false, categories.include?("Family"))
 categories << "Shopping"
 
 #repeat check here
-if categories.include? "Animals" && "Shopping"
+if categories.include?("Animals") && categories.include?("Shopping")
   categories << "Family"
 end
 
@@ -82,7 +82,7 @@ assert_equal(true, categories.include?("Family"))
 
 # Print all of the Array elements as a comma separated string in alphabetical order
 # persist the sorting of categories
-assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.sort.join(", "))
+assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.sort!.join(", "))
 assert_equal(%w(Animals Family Florida Music Shopping Weather), categories)
 
 # Remove the first category from the array and print it to the screen "First Category: Category here"
