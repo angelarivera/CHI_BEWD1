@@ -36,73 +36,55 @@
 #
 ###############################################################################
 
-#welcome message
-def print_welcome
-	"Welcome to the number game! This game was created by Michael Halgas"
+# assign variables 
+
+# $ makes variables global so local methods can access them
+$secret_number = 4
+# if I want to change it to a random number use the below variable
+# random_number = 1 + rand(10)
+player_name = ""
+player_guess = 0
+round_count = 1
+
+# define methods
+def you_win
+	puts "You guessed the number! Great job! Have fun being an human for the rest of your pitiful life."
 end
 
-#get player's name
-def get_player_name
-	puts "What's your name player?"
-	gets.strip
+def guess_again
+	puts "That's not right. Guess again."
+	player_guess = gets.strip.to_i
 end
 
-#say hi and explain the game
-def ready_start(name)
-	"Hello #{name}! Guess a number between 1 and 10. You have 3 attempts to guess the SECRET NUMBER!"
+def you_lose
+	puts "You lose. The answer was #{$secret_number}. Please step into the machine on your left."
 end
 
-#start guess count
-try = 0
+# start gameplay
+puts "Welcome to my guess the number game! I'm Dr. Moreau, What's your name?"
+player_name = gets.strip.to_s
 
-#count attempts 
-def get_try(try, number)
-	if try == 1
-		"You have 2 attempts remaining, player"
-	elsif try == 2
-		"You have 1 attempt remaining, player"
-	else try == 3
-		"Game over, player. The secret number is #{number}"
+puts "Nice to meet you #{player_name.capitalize}. You now have 3 tries to guess a number between 1 and 10 before I turn you into a human-beast hybrid.\nWhat is your first guess?"
+player_guess = gets.strip.to_i
+
+# start conditionals
+if player_guess == $secret_number
+	puts you_win
+	exit
+end
+#iterate through rounds
+until round_count == 3 do
+	if player_guess != $secret_number
+		round_count += 1
+		puts guess_again
 	end
 end
 
-#get player's guess
-def get_player_guess
-	puts "What's your guess player?"
-	gets.to_i
+if player_guess != $secret_number && round_count == 3
+	puts you_lose
 end
 
-#define secret number
-secret_number = 6
 
-#define variables
-number = secret_number
-guess = get_player_guess
 
-#calculate response 
-def calc_response(nubmer, guess)
-	if number > guess
-		"Too low, player."
-	elsif number > guess
-		"Too high, player"
-	else number == guess
-		"Just right, player. You can stop now."
-	end
-end
 
-#run the game
-print_welcome
-name = get_player_name
-ready_start(name)
-guess = get_player_guess
-calc_response(number, guess)
-try += 1
-get_try(try, number)
-guess = get_player_guess
-calc_response(number, guess)
-try += 1
-get_try(try, number)
-guess = get_player_guess
-calc_response(number, guess)
-try += 1
-get_try(try, number)
+

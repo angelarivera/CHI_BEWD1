@@ -36,46 +36,56 @@
 #
 ###############################################################################
 
-#set secret_number
-number = 6
-guess_count = 0
+GUESS_NUMBER = 3
+NUMBER = 6
 
-#Welcome-message
-puts 'Welcome to Secret Number, the game where you guess a secret number!'
-puts '~a kent green joint~'
+puts "Hi, welcome to Ruby Roulette. This was created by Colin McCaleb."
+puts "To begin, please enter your First Name."
+name = gets.chomp
 
-#Asking for player name
-puts 'What is your name?' 
- player_name = gets
-puts 'Hi ' + player_name + ' good luck today!' 
+puts
+puts "Hello #{name}."
+puts "You have three tries to guess the number. I will tell you if you are too low or too high."
+puts "Give me your best shot!"
+puts
 
-#explain the rules
-puts 'You have three chances to guess the Secret Number. Fame and fortune await!'
+  
+  num_guesses = 1
+  
+  # GUESSING LOOP
+  loop do 
+    puts "Guess number #{num_guesses}. What is your guess?"
+    guess = gets
 
-###ok
-
-#start the game
-while guess_count < 3 do
-	puts 'What is your guess?'
- 	guess = gets.chomp.to_i
- 	guess_count += 1
-
-#set clue logic
-	if guess > number
-		puts 'Whoa, too high!'
-	elsif guess < number 
-		puts 'Too low. Go big or go home.'
-	else
-		puts "You've guessed the Secret Number! Tell all your friends!"
-		break
-	end
-
-	if guess_count >= 3
-		puts 'You did not guess the Secret Number. Your descendents will live in shame.'
-	end
-end
+    if guess.to_i < NUMBER
+      puts "Your guess was too low!"
+    elsif guess.to_i > NUMBER
+      puts "Your guess was too high!"
+    else
+      # If we get here, the guess was right!
+      puts "You got the number right! It was #{NUMBER}."
+      break
+    end
+  
+    if num_guesses >= 3
+      puts "You have exceeded the maximum number of guesses."
+      break
+    end
+    num_guesses += 1
+  end
+  
+  # REPLAY QUERY
+  puts "The game is over. The secret number was 6!"
+  puts "Press Return to escape game."
+puts "Cheers!"
 
 ## FEEDBACK
-# Awesome work! I really liked the commentary, it made me laugh.
-# Good use of the += operator too. You're the first one so far to have used
-# that for this assignment so far.
+# Excellent work, it works exactly as expected. The only
+# issue I see is that you define GUESS_NUMBER but never use it.
+# Instead you use num_guesses which is fine. Just be sure to
+# delete any unused variables in your code, especially in Ruby because
+# it takes a bit more memory to run than other languages.
+# The other thing I noticed was that you capitalized the NUMBER variable.
+# When you do that it indicates that the variable is a constant. There's nothing
+# wrong with it, I just wanted to point that out because its a good use of constants
+# if you intended it to be one.

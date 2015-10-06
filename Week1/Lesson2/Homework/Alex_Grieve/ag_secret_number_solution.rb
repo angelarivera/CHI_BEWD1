@@ -49,11 +49,7 @@ if solved == 0
 	puts "The secret number was: #{secret_number}\n"
 end
 
-
-
-
-		
-
-
-
-
+############
+# FEEDBACK #
+############
+# Totally correct and perfectly executed. Totally perfect, good work.
