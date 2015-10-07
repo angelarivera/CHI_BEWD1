@@ -14,7 +14,8 @@ end
 
 #rules
 def Start(name)
-	puts "Hi"+{name}+"! Wow what a stupid name... but i'll let you play anyways. So here are the rules: try to guess a number between 1 and 10. You have 3 guesses. That is all. Lets Play!"
+	#puts "Hi"+{name}+"! Wow what a stupid name... but i'll let you play anyways. So here are the rules: try to guess a number between 1 and 10. You have 3 guesses. That is all. Lets Play!"
+  puts "Hi #{name}! Wow what a stupid name... but i'll let you play anyways. So here are the rules: try to guess a number between 1 and 10. You have 3 guesses. That is all. Lets Play!"
 end
 
 
@@ -28,12 +29,14 @@ def get_attempt(attempt, number)
 	elsif attempt==2 
 		puts "choose wisely, only one more try"
 	elsif attempt==3 
-		puts "YOU FOOL! the number was"+{secrit_number} ".Better luck next time"
+		# puts "YOU FOOL! the number was"+{secrit_number}+".Better luck next time"
+    puts "YOU FOOL! the number was #{secrit_number}. Better luck next time"
 end		
 
 #gets players guess
 def gets_players_guess
-	puts "what is your guess"+{name}+"?"
+	# puts "what is your guess"+{name}+"?"
+  puts "what is your guess #{name}?"
 	guess = gets.to_i
 end
 
@@ -71,5 +74,19 @@ get_attempt(attempt, number)
 guess=gets_players_guess
 calc(number, guess)
 try +=1
-get_attempt(attempt, number)		
-		
+get_attempt(attempt, number)	
+
+# FEEDBACK
+# This is a good try. The first issue you had was the syntax
+# for string interpolation. It's like this: `"#{some_variable} and then some more text with it"
+# Besides that, the logic is there and I see what you were trying to do
+# but you have to remember that you can't pass variables from the command line
+# to your program the way you tried here. In you methods, the `number`
+# argument will always fail because there's no number variable defined
+# anywhere in the code and your program doesn't know to ask the person
+# for it.
+# The way you get around this is by using `gets` to get user input.
+# Also, you structured the code so that people have 3 tries to guess a number
+# but rather than repeating those method calls and incremementing the try variable
+# on each pass you could have put all that code into a loop that runs just 3 times
+# and that would have saved you from repeating yourself.

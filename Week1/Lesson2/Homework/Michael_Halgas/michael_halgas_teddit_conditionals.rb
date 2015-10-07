@@ -54,3 +54,8 @@ category = get_category
 upvotes = calculate_upvotes(story, category, start_upvotes)
 
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+
+## FEEDBACK
+# Excellent work! I'm supposed to give feedback but you
+# did this almost exactly the way I'd have done it myself so there's
+# not much else to say except good job.
