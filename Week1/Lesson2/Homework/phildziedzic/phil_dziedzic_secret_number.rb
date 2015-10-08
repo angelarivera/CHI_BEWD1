@@ -54,3 +54,11 @@ def compare_guess(guess)
 		puts "You have #{remaining_guesses} guesses remaining."
 	end
 end
+
+## FEEDBACK
+# You almost got this. The logic is there and the syntax and most things
+# are correct. You need to define the method that gets user input
+# before you call it. Running the program this way will throw an undefined error.
+# You just have to define all your methods first then run the program
+# and it should run with no problem
+# Otherwise all the logic is there and is correct. Good work.

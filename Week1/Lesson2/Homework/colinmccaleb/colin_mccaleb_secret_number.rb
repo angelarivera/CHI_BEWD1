@@ -78,3 +78,14 @@ puts
   puts "The game is over. The secret number was 6!"
   puts "Press Return to escape game."
 puts "Cheers!"
+
+## FEEDBACK
+# Excellent work, it works exactly as expected. The only
+# issue I see is that you define GUESS_NUMBER but never use it.
+# Instead you use num_guesses which is fine. Just be sure to
+# delete any unused variables in your code, especially in Ruby because
+# it takes a bit more memory to run than other languages.
+# The other thing I noticed was that you capitalized the NUMBER variable.
+# When you do that it indicates that the variable is a constant. There's nothing
+# wrong with it, I just wanted to point that out because its a good use of constants
+# if you intended it to be one.

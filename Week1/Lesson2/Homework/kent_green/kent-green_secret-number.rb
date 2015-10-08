@@ -74,3 +74,8 @@ while guess_count < 3 do
 		puts 'You did not guess the Secret Number. Your descendents will live in shame.'
 	end
 end
+
+## FEEDBACK
+# Awesome work! I really liked the commentary, it made me laugh.
+# Good use of the += operator too. You're the first one so far to have used
+# that for this assignment so far.

@@ -33,3 +33,12 @@ puts "Please give it a category:"
 category = get_input
 upvotes = calculate_upvotes(story, category)
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+
+## FEEDBACK
+# This works as expected but a few things could have been better. When
+# you use `gets` for input, you should call `.strip` on that variable to
+# remove any white space. Without that the output includes the line break from
+# when the user presses Enter to input their answers.
+# You also calculate the upvotes correctly but you were actually supposed to
+# compare it to the category, not the story. But its not a big deal, you calculated
+# the upvotes correctly anyway.

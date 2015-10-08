@@ -117,3 +117,6 @@ assert_equal(1, categories.size) # get it's size
 assert_equal(["Misc"], categories)
 
 puts "YOU'RE DONE!"
+
+## FEEDBACK
+# 100% correct. I wish I could say more but you did this perfectly.
