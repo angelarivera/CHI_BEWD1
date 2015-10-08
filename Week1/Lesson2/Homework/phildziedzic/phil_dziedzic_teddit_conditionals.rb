@@ -15,15 +15,15 @@ def calculate_upvotes(story, category)
         # If the Story is about cats multiply the upvotes by 5
         if category.include "cats"
         	upvotes = upvotes * 5
-    	end
+    	   end
         # If the Story is about bacon multiply the upvotes by 8
         if category.include "bacon"
         	upvotes = upvotes * 8
-    	end
+    	  end
         # If the Story is about Food it gets 3 times the upvotes.
         if category.include "Food"
         	upvotes = upvotes * 3
-    	end
+    	  end
     puts upvotes
 end
 
@@ -34,3 +34,12 @@ puts "Please give it a category:"
 category = get_input
 upvotes = calculate_upvotes(story, category)
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+
+## FEEDBACK
+# Good work. This is almost right. A few problems.
+# First, keep track of your indentation. If its consistent you'll
+# be able to catch easy mistakes like a missing `end` keyword.
+# Also, you can't define a method inside of another method. Ask youself
+# why you're defining methods. It should be because there's a block of code
+# that's pretty generic and can be reused. You can call a method inside of another
+# method but you can't *define* a method within another method.

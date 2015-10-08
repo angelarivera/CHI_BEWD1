@@ -1,0 +1,8 @@
+1.1 Homework: most challenging part of class:
+
+-getting my computer set up. I am working on a PC, and at first i didn't fully understand how Ubuntu was a completely different system, so i didn't have the required programs like sublime on the linux platform but on my pc. was confusing at first, but get it now
+
+-understanding what "git" is. at first i really didn't understand what 'git' was, but now i think i do.'git' is just a snapshot of the current version of a project you are working on... right?
+
+-understanding what the 'command line' or terminal is. again at first i didn't understand the concept at all. after looking at a file folders in tandom, i understand it much more clearly. 
+

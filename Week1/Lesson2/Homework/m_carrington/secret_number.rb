@@ -36,46 +36,55 @@
 #
 ###############################################################################
 
-#set secret_number
-number = 6
-guess_count = 0
+# assign variables 
 
-#Welcome-message
-puts 'Welcome to Secret Number, the game where you guess a secret number!'
-puts '~a kent green joint~'
+# $ makes variables global so local methods can access them
+$secret_number = 4
+# if I want to change it to a random number use the below variable
+# random_number = 1 + rand(10)
+player_name = ""
+player_guess = 0
+round_count = 1
 
-#Asking for player name
-puts 'What is your name?' 
- player_name = gets
-puts 'Hi ' + player_name + ' good luck today!' 
+# define methods
+def you_win
+	puts "You guessed the number! Great job! Have fun being an human for the rest of your pitiful life."
+end
 
-#explain the rules
-puts 'You have three chances to guess the Secret Number. Fame and fortune await!'
+def guess_again
+	puts "That's not right. Guess again."
+	player_guess = gets.strip.to_i
+end
 
-###ok
+def you_lose
+	puts "You lose. The answer was #{$secret_number}. Please step into the machine on your left."
+end
 
-#start the game
-while guess_count < 3 do
-	puts 'What is your guess?'
- 	guess = gets.chomp.to_i
- 	guess_count += 1
+# start gameplay
+puts "Welcome to my guess the number game! I'm Dr. Moreau, What's your name?"
+player_name = gets.strip.to_s
 
-#set clue logic
-	if guess > number
-		puts 'Whoa, too high!'
-	elsif guess < number 
-		puts 'Too low. Go big or go home.'
-	else
-		puts "You've guessed the Secret Number! Tell all your friends!"
-		break
-	end
+puts "Nice to meet you #{player_name.capitalize}. You now have 3 tries to guess a number between 1 and 10 before I turn you into a human-beast hybrid.\nWhat is your first guess?"
+player_guess = gets.strip.to_i
 
-	if guess_count >= 3
-		puts 'You did not guess the Secret Number. Your descendents will live in shame.'
+# start conditionals
+if player_guess == $secret_number
+	puts you_win
+	exit
+end
+#iterate through rounds
+until round_count == 3 do
+	if player_guess != $secret_number
+		round_count += 1
+		puts guess_again
 	end
 end
 
-## FEEDBACK
-# Awesome work! I really liked the commentary, it made me laugh.
-# Good use of the += operator too. You're the first one so far to have used
-# that for this assignment so far.
+if player_guess != $secret_number && round_count == 3
+	puts you_lose
+end
+
+
+
+
+
