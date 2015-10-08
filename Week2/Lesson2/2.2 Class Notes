@@ -1,0 +1,91 @@
+2.2 Class Notes 
+
+TODAY-
+	Hashes
+	collections
+	loops 
+	API's
+
+REVIEW
+three ways to add something to an array
+	.push
+	<<
+	.unshift
+ensure unique
+	.uniq
+	.uniq!  = changed in place. perminent
+.sort just sorts put to "persist" do ! version, sort!
+.length is the fasted of .size
+
+line 85 cataories.sort!join 
+
+COLLECTIONS 	
+hashes are simular to arrays, called dictionaries. collection of key value pairs. grab things by its key, unlike array you grab by the index. its like a 2 dimentional array
+
+useful for holding related data
+ ex) "name"=>"matt", ...... one key value pair
+ 	 "phone number" =>"123 456 7890"
+
+how do you access things inside of a hash? instead of index, you use the key
+ex) "student"={....}
+	student['name']- student is the hash and the key is name, will return the name of the student
+Setting values 
+creating an empty hash-user has={}
+user hash["name"]= "salman"
+user has [favorite color]
+
+SYMBOL- unique to ruby 
+used as a value that isnt going to chnage. like a string except no spaces, or numbers. just a string. much cleaner then normal strings.
+ex)
+	:hello
+	:this_is_a_symbol
+	use in the context of a hash
+	hash[:hello world]="hi!"     ... no quotes 
+primarility used for strings in hashes
+
+Hashes and methods 
+
+user= {:user name => mhb email=> hbb@emial.com}
+
+new syntaxes for =>
+was	{"name"=>"angie"}
+now {name: "angie"}....... much cleaner
+
+COLLECTIONS- Array of hashes
+
+iterating over collections
+	.each
+	ga_markets["NYC","LA"]
+	ga_markets.each {|market| puts market}
+
+
+	do is how you opena multi line block
+
+if you want to do more complex thing in an array, use more mutlilines- 
+
+API's
+
+Applications Programming Interact- some sort of web service you make a request to and you get back some data. urls you make request to are called endpoints. 
+
+json is now most common for, use to be xlm
+	1)ask for data (in jason form)
+	2)convert to form you can work with 
+	3)manipulate data
+Json- javascript object notation (kinda looks like a hash but keys and values seperated by a colin
+
+	What is a gem? 
+		a library- a colletion of functions or methods
+
+how to do this:
+	-
+
+
+
+
+	check out ruby jems
+		rest-client.... take arguments from a url
+
+
+		to install gem throug command line 
+
+		sudo gem install [gem name]

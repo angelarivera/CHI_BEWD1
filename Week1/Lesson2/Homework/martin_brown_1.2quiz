@@ -14,3 +14,6 @@ Class 1.2 QUIZ
 	a:where your local git reposiutory is hoasted and shared publicly
 5.What is the correct was to push
 	a: get push origin master
+
+FEEDBACK
+You got all these right. Just to clarify, a git repo takes the snapshot of all files and folders from its root down so you can have a snapshot of ALL your files and folders at different points in time. And for number 5 it's `git push [remote] [branch]` which I think you know, I think you just had a typo there.

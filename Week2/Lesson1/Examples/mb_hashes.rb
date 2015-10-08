@@ -35,25 +35,23 @@ forecast = [
   {
     date: 'Thursday',
     temp: 65,
-    desc: 'Sunny',
+    desc: 'Sunny as FUCK!',
     moon_phase: 'Full Moon'
   },
   {
     date: 'Friday',
     temp: 71,
-    desc: 'Mostly cloudy',
+    desc: 'Mostly FUCKING CRAZY cloudy',
     moon_phase: 'Waning Crescent'
   }
 ]
+# this is the short way
+forecast.each do |weather|
+  weather.each do|x, y|
+  puts "#{x} is #{y}"
+  puts "---------------------------------------------------------"
+end 
+end
 
-
-
-
-# forecast.each {|weather| puts "The temp on #{weather[:date]} will be #{weather[:temp]} and #{weather[:desc]}\nMoon phase: #{weather[:moon_phase]}" }
-
-# forecast.each do |weather|
-#   puts "The temp on #{weather[:date]} will be #{weather[:temp]} and #{weather[:desc]}"
-#   puts "Moon phase: #{weather[:moon_phase]}"
-#   puts "========================="
-# end
-
+#this is the long way
+#forecast.each {|weather| put "the temp on #{weather[:date]}"}
