@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 =begin
+=======
+>>>>>>> 481521fde066e74822b9af9081b575ef96939b3c
 # How to create objects and the benefits of them
 # ==============================================
 # Let's focus on how to create new objects and why.
@@ -6,6 +9,7 @@
 # Why use Objects?
 # ----------------
 # These are 3 hashes that have the same fields and share a similar behavior
+<<<<<<< HEAD
  jimmy = {}
  jimmy[:name] = "Jimmy Mazzy"
  jimmy[:major] = "Math"
@@ -38,6 +42,40 @@ end
 puts "#{jimmy[:name]} has #{grade_status(jimmy)} #{jimmy[:course]}"
 puts "#{pepe[:name]} has #{grade_status(pepe)} #{pepe[:course]}"
 puts "#{edward[:name]} has #{grade_status(edward)} #{edward[:course]}"
+=======
+#  jimmy = {}
+#  jimmy[:name] = "Jimmy Mazzy"
+#  jimmy[:major] = "Math"
+#  jimmy[:course] = "Math"
+#  jimmy[:grade]= "A"
+# #
+#  pepe = {}
+#  pepe[:name]= "Pepe Phaenagrotis"
+#  pepe[:major] = "Music"
+#  pepe[:course] = "Math"
+#  pepe[:grade] = "C"
+# #
+#  edward = {}
+#  edward[:name] = "Edward Ellis"
+#  edward[:major] = "Math"
+#  edward[:course] = "Math"
+#  edward[:grade] = "D"
+# #
+# def grade_status(student)
+#   if student[:grade] == "F"
+#     "failed"
+#   elsif ["D", "E"].include?(student[:grade]) && student[:major] == student[:course]
+#     # if this course is their major, they need a C or higher to pass
+#     "failed"
+#   else
+#     "passed"
+#   end
+# end
+
+# puts "#{jimmy[:name]} has #{grade_status(jimmy)} #{jimmy[:course]}"
+# puts "#{pepe[:name]} has #{grade_status(pepe)} #{pepe[:course]}"
+# puts "#{edward[:name]} has #{grade_status(edward)} #{edward[:course]}"
+>>>>>>> 481521fde066e74822b9af9081b575ef96939b3c
 
 
 #####################################################################################################
@@ -98,6 +136,7 @@ puts "#{edward[:name]} has #{grade_status(edward)} #{edward[:course]}"
 #####################################################################################################
 # How about adding the grade_status method to our class?
 # What's up with the `attr_accessor`? http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
+<<<<<<< HEAD
 class Student
   attr_accessor :name, :major, :course, :grade
 
@@ -138,6 +177,46 @@ puts "#{edward.name} has #{edward.grade_status} #{edward.course}"
 =end
 
 =begin
+=======
+# class Student
+#   attr_accessor :name, :major, :course, :grade
+
+#   def grade_status
+#     if @grade == "F"
+#       "failed"
+#     elsif ["D", "E"].include?(@grade) && @major == @course
+#       "failed"
+#     else
+#       "passed"
+#     end
+#   end
+# end
+
+# jimmy = Student.new
+# jimmy.name = "Jimmy Mazzy"
+# jimmy.major = "Math"
+# jimmy.course = "Math"
+# jimmy.grade = "A"
+
+# pepe = Student.new
+# pepe.name = "Pepe Phaenagrotis"
+# pepe.major = "Music"
+# pepe.course = "Math"
+# pepe.grade = "C"
+
+# edward = Student.new
+# edward.name = "Edward Ellis"
+# edward.major = "Math"
+# edward.course = "Math"
+# edward.grade = "D"
+
+
+# puts "#{jimmy.name} has #{jimmy.grade_status} #{jimmy.course}"
+# puts "#{pepe.name} has #{pepe.grade_status} #{pepe.course}"
+# puts "#{edward.name} has #{edward.grade_status} #{edward.course}"
+
+
+>>>>>>> 481521fde066e74822b9af9081b575ef96939b3c
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
@@ -149,6 +228,7 @@ puts "#{edward.name} has #{edward.grade_status} #{edward.course}"
 class Student
   attr_accessor :name, :major, :course, :grade
 
+<<<<<<< HEAD
  def initialize(name, major, course, grade)
  	@name = name
  	@major = major
@@ -158,6 +238,19 @@ class Student
 
 
 
+=======
+  def initialize(name, major, course, grade)
+    @name = name
+    @major = major
+    @course = course
+    @grade = grade
+  end
+
+  def to_s
+    "#{@name} is a #{@major} major in #{@course} class with a grade of #{@grade}. They have #{self.grade_status}."
+  end
+  
+>>>>>>> 481521fde066e74822b9af9081b575ef96939b3c
   def grade_status
     if @grade == "F"
       "failed"
@@ -174,7 +267,13 @@ jimmy = Student.new("Jimmy Mazzy", "Math", "Math", "A")
 pepe = Student.new("Pepe Phaenagrotis", "Music", "Math", "C")
 edward = Student.new("Edward Ellis", "Math", "Math", "C")
 
+<<<<<<< HEAD
 puts jimmy 
 puts pepe
 puts edward=end
 
+=======
+puts jimmy
+puts pepe
+puts edward
+>>>>>>> 481521fde066e74822b9af9081b575ef96939b3c
