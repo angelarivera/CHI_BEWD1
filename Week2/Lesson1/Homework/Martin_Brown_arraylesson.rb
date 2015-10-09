@@ -65,7 +65,7 @@ assert_equal ["Florida", "Music", "Weather"], categories.sort
 # Write a conditional that adds "Family" to the category list if it includes both Animals, and Shopping
 categories << "Animals"
 
-if categpries.indlude 'shopping'
+if categories.include? 'shopping'
   categories << "Family"
 end
 
@@ -117,3 +117,7 @@ assert_equal(1, categories.size) # get it's size
 assert_equal(["Misc"], categories)
 
 puts "YOU'RE DONE!"
+
+## FEEDBACK
+# You're close but not quite there. The `include?` method has a question mark at the end of it. Also, be real careful with 
+# what you type. There were quite a few typos in method names that were preventing this from running but were easily fixed.
