@@ -16,3 +16,5 @@ new_stories.each do |story|
 	puts "Content: #{story['content']['plain']}"
 	puts "=====================================\n\n"
 end
+
+# 100% right.
