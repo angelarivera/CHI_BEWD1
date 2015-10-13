@@ -36,8 +36,10 @@ def calculate_upvotes(story, category, start_upvotes)
 		start_upvotes = start_upvotes * 5
 	elsif [story, category].include? "bacon"
 		start_upvotes = start_upvotes * 8
-	else [story, category].include? "food"
+	elsif [story, category].include? "food"
 		start_upvotes = start_upvotes * 3
+	else
+		start_upvotes = 1
 	end
 end
 
