@@ -20,31 +20,34 @@ class Game
 # code is structured properly
 	attr_accessor :player, :secret_number, :guess, :guesses_left
 
-	def initialize (player, secret_number, guess, guesses_left)
-		@player = Person.new.player_name
+	def initialize
+		@player = Person.new
 		@secret_number = SecretNumber.new.random_num
 		@guess = guess
 		@guesses_left = guesses_left
 	end
 
 	def number_check
-		@guesses_left = 3
-		until @guesses_left > 0 do
-		 	@guess = gets.strip.to_i
+		@guesses_left = 2
+		@guess = gets.strip.to_i
+		until @guesses_left == 0 do
 			if @guess > @secret_number
 				@guesses_left -= 1
-				puts "That's too high! Only #{guesses_left.to_s} more guesses!"
+				puts "That's too high! Only #{(guesses_left + 1).to_s} more guesses!"
+				@guess = gets.strip.to_i
 			elsif @guess < @secret_number
 				@guesses_left -= 1
-				puts "That's too low! Only #{guesses_left.to_s} more guesses!"
-			elsif @guess == @secret_number
+				puts "That's too low! Only #{(guesses_left + 1).to_s} more guesses!"
+				@guess = gets.strip.to_i
+			else
 				puts "You guessed the number! Great job! Have fun being an human for the rest of your pitiful life."
 				exit
-			else
+
+			end
+			if @guesses_left == 0
 				puts "You lose. The answer was #{@secret_number.to_s}. Please step into the machine on your left."
 				exit
 			end
-			
 		end
 	end
 
