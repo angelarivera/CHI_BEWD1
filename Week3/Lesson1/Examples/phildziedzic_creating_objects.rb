@@ -52,6 +52,7 @@
 # - Now each student is an instance of a Student class
 # - This means it has built in attributes and functionality
 ###
+
 # class Student
 #  attr_accessor :name, :major, :course, :grade
 # end
@@ -97,6 +98,8 @@
 #####################################################################################################
 # How about adding the grade_status method to our class?
 # What's up with the `attr_accessor`? http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
+
+
 # class Student
 #   attr_accessor :name, :major, :course, :grade
 
@@ -147,16 +150,16 @@ class Student
   attr_accessor :name, :major, :course, :grade
 
   def initialize(name, major, course, grade)
-    @name = name
-    @major = major
-    @course = course
-    @grade = grade
+  	@name = name
+  	@major = major
+  	@course = course
+  	@grade = grade
   end
 
   def to_s
-    "#{@name} is a #{@major} major in #{@course} class with a grade of #{@grade}. They have #{self.grade_status}."
+  	"#{@name} is a #{@major} major in #{@course} class with a grade of #{@grade}. They have #{self.grade_status}."
   end
-  
+
   def grade_status
     if @grade == "F"
       "failed"

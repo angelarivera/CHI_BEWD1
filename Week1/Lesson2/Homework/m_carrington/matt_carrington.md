@@ -20,3 +20,7 @@ A GitHub Repository is a storage space that you can upload projects and files in
   c. `git push origin master`
 
 The answer is c.
+
+## Feedback
+
+100% right. If you can remember these answers then you'll have an excellent foundation for understanding Git and Github.
