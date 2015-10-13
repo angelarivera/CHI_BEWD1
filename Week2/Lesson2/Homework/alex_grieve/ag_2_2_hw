@@ -21,35 +21,25 @@
 require 'rest-client'
 require 'json'
 
-# Your work goes here.
-
-# Return JSON response
+# Get JSON blob
 response = RestClient.get 'http://mashable.com/stories.json'
 
-# Turn the response to a ruby hash
+# Turn Ruby into a hash
 parsed_response = JSON.parse(response)
 
-# Store the "KEY_YOU_WANT" (parsed) from the JSON response into a ruby array
+# Look inside the new key - returns an array of hashes
 new_stories = parsed_response['new']
 
-hot_three = parsed_response['hot']
-
-# Iterate over the array to output Title, Author, Content
 new_stories.each do |story|
 	puts "Title: #{story['title']}"
 	puts "Author: #{story['author']}"
-	puts "Content: #{story['content']['plain']}"
-	puts "================================================\n\n"
+	# Story is contained in a hash
+	puts "Story: #{story['content']['plain']}"
+	puts "---------------------------------------------"
 end
 
-# Also totally correct. Good work.
-
-puts "Here are the hot three stories on Mashable"
-puts "================================================\n\n"
-
-hot_three[0..2].each do |story|
-	puts "Title: #{story['title']}"
-	puts "Author: #{story['author']}"
-	puts "Content: #{story['content']['plain']}"
-	puts "================================================\n\n"
-end
+# 100% right. This might have seemed too easy since
+# I pretty much showed exactly how to do it as an example
+# but you'd be surprised. There's a lot you can get out
+# of going through the motions and typing things out
+# yourself.

@@ -32,8 +32,8 @@ class Story
   end
 end
 
-story = Story.new
-story.upvote!
+story = Story.new 
+story.upvote! 
 
-photo = Photo.new
+photo = Photo.new 
 photo.downvote!
