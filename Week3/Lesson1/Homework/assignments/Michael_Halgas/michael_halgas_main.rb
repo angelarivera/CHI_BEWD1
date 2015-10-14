@@ -7,9 +7,9 @@
 # => We've also provided a png file of the terminal output from the completed version.
 # => Hint: Think before you code. Annotate code and comment out sections as you test different sections
 
-require_relative 'lib/michael_halgas_building'
-require_relative 'lib/michael_halgas_apartment'
-require_relative 'lib/michael_halgas_person'
+require_relative 'lib/michael_halgas_building.rb'
+require_relative 'lib/michael_halgas_apartment.rb'
+require_relative 'lib/michael_halgas_person.rb'
 
 ## First, define our methods
 
