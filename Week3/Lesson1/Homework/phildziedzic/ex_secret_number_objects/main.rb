@@ -27,13 +27,14 @@ require 'lib/game'
 puts "Welcome to Secret Number 4000! This game was created by Phil Dziedzic."
 
 # ask user to enter name, send to person class
-def create_player
-	puts "What is your name?"
-	player_name = gets.strip
-	Person.new(player_name)
-end
-
-player = create_player
+puts "What is your name?"
+player_name = gets.strip
 
 # instantiate game class
-Game.new(player)
+Game.new(player_name).play
+
+
+
+
+
+

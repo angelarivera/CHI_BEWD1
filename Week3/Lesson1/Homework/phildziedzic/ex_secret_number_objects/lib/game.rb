@@ -16,17 +16,43 @@ require 'lib/secret_number'
 
 
 class Game
-	attr_accessor :player :secret_number
+	attr_accessor :player, :secret_number, :player_name
 
 	def initialize(a)
-		@player = a
+		@player_name = player_name
+		@player = Person.new(player_name)
 		@secret_number = SecretNumber.generate
 	end
 
-	Person.new
-	SecretNumber.new
-	@secret_number = SecretNumber.choose
 
-	puts "Welcome, #{person.player_name}!"
-	puts "Here are the rules:/n1) You have three chances to guess a number between 1 and 10./n2)For each guess, you'll be told if it's too low or high./n3)If you don't guess correctly in 3 chances, you lose."
+	def play
+		guesses = 3
+		
+		while guesses > 0
+			puts "Guess the secret number (between 1 and 10)"
+			guess = gets.strip
+
+			if guess.to_i > self.secret_number[0]
+				puts "That's too high, guess lower!"
+				guesses -= 1
+
+				if guesses == 0
+					puts "YOU LOSE, the secret number was #{secret_number}."
+				end
+
+			elsif guess.to_i < self.secret_number[0]
+				puts "That's too low, guess higher!"
+				guesses -= 1
+
+				if guesses == 0 
+					puts "YOU LOSE, the secret number was #{secret_number}."
+				end
+				
+			else
+				puts "That's correct, YOU WIN!"
+				break
+			end
+		end
+	end
+
 end

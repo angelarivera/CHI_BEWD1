@@ -6,18 +6,14 @@
 
 
 class SecretNumber
-	attr_accessor :randoms, :secret_number
-
-	def initialize(a=[], b)
-		@randoms = a
-		@secret_number = b
-	end
-
-	# into randoms, grab 1 example from an array of 10 numbers
+	# generate 10 randoms, choose 1 of them
 	def self.generate
+		secret_array = []
+
 		10.times do
-			@randoms << rand(1..10)
+			secret_array << rand(1..10)
 		end
-		@randoms.sample(1)
+
+		secret_array.sample(1)
 	end
 end
