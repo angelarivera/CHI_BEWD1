@@ -84,7 +84,13 @@ if player_guess != $secret_number && round_count == 3
 	puts you_lose
 end
 
-
+## FEEDBACK
+#
+# Your code is working and looks good. The only thing you're missing is the conditional
+# that checks whether the guess is too high or too low and lets the user know. I see
+# you used a conditional to see if the guess was correct so that shows an understanding
+# of conditionals. Just be sure you're comfortable not just with simple if-statements
+# but multi-condition if/elseif/else statements as well. Otherwise, all good work here.
 
 
 

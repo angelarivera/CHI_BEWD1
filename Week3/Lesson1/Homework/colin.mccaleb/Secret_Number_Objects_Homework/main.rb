@@ -44,7 +44,17 @@ $:.unshift (File.dirname(__FILE__))
 require 'lib/game'
 
 # put code here print a welcome message for your user
+ class Main
+  puts "Welcome to the Ruby Guessing game made by Colin McCaleb"
 
 # put code here ask the user for their name, and save it
 
+  puts "What's your name?"
+  name = gets.strip
+
+  Player = Player.new
+  puts Player.name
+
+
 # put code here to create a new game, and start it
+end
