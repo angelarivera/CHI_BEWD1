@@ -48,17 +48,16 @@
 #
 ###############################################################################
 #welcome
-print "Welcome to the secret number game! 
-created by G. Scannell"
+puts "Welcome to the secret number game! Created by G. Scannell \r"
 #ask player's name
 puts "What is your name?"
 name = gets.chomp
 #say hello and explain the game
-print "Hello #{name}! Guess a number 
+print "Hello #{name}! \r Guess a number 
 between 1 and 10, you have 3 attempts 
-to guess the secret number"
+to guess the secret number \r"
 #get secret number
-secret_num = rand (1..10)
+secret_num = rand(1..10)
 #initialize guesses
 guesses = 3
 # define the compare function that tests the guess
