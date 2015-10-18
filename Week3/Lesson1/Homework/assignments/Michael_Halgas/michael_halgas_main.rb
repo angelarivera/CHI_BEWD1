@@ -92,3 +92,7 @@ if response == 'v'
 else
   puts "Thanks for using Ruby Building Manager"
 end
+
+## FEEDBACK
+# Excellent work. You're the second person to
+# get this 100% perfect with not even a tiny mistake.

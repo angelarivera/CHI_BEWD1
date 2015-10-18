@@ -91,3 +91,9 @@ if response == 'v'
 else
   puts "Thanks for using Ruby Building Manager"
 end
+
+## FEEDBACK
+# Good work. The only issue is that you don't have a
+# view_apartments method in the Building class. That
+# causes an error at the end when you choose to view
+# apartments. Otherwise it's correct and working.

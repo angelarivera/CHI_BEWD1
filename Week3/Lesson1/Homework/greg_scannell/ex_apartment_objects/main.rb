@@ -91,3 +91,9 @@ if response == 'v'
 else
   puts "Thanks for using Ruby Building Manager"
 end
+
+## FEEDBACK
+# Nice work. The only thing you're missing is overriding the
+# to_s method of the Apartment class. If you add a to_s method
+# to it then you'll be able to output the apartment details as a 
+# string instead of something like <Apartment:x01ajdn>.
