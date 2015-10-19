@@ -54,3 +54,7 @@ guest = gets.strip.to_s
 puts "Nice to meet you #{guest.capitalize}. You now have 3 tries to guess a number between 1 and 10 before I turn you into a human-beast hybrid.\nWhat is your first guess?"
 Game.new.number_check
 
+## FEEDBACK
+# Nice work. I like that you chained methods together
+# to run the game instead of instantiating a new game
+# and then calling number_check. 100% right.

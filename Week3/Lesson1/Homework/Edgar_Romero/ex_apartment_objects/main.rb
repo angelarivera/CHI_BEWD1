@@ -92,3 +92,6 @@ if response == 'v'
 else
   puts "Thanks for using Ruby Building Manager"
 end
+
+## FEEDBACK
+# Well done. 100% working and correct. Couldn't have done it better myself.

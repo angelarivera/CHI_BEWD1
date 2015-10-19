@@ -91,3 +91,9 @@ if response == 'v'
 else
   puts "Thanks for using Ruby Building Manager"
 end
+
+## FEEDBACK
+# This works perfectly. The only thing you're
+# missing is overriding the to_s method of the
+# building class so you can output its internal state
+# as a string.

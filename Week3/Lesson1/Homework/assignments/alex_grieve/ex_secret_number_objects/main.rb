@@ -44,3 +44,10 @@ end
 
 main = Main.new()
 main.play
+
+## FEEDBACK
+# Excellent work! You went beyond the basics. I really
+# like the ability to start a new game at the end. You
+# obviously get this stuff and I'm guessing you're doing
+# a lot of Googling for how to do stuff which is a great
+# habit to get into.
