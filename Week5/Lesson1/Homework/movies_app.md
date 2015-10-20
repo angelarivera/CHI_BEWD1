@@ -18,7 +18,7 @@ Task Instructions
 
 Add to your Movie_app
 
-Pair Program.
+Feel free to pair program for the rest of class time and at home if you can.
 
 Generate a Movie model with title, description and year_released attributes.
 
