@@ -42,21 +42,13 @@
 
 $:.unshift (File.dirname(__FILE__))
 require 'lib/game'
-require 'lib/person'
-require 'lib/secret_number'
 
-
-# here's the  Welcome-message
-puts 'Welcome to Secret Number, the game where you guess a secret number!'
-puts '~a kent green joint~'
+# put code here print a welcome message for your user
+puts "Welcome to the game. Bill Made This"
 
 # put code here ask the user for their name, and save it
-def create_player
- puts "What is your name?" 
- name = gets.strip
-
- Person.new(name)
-end
+player_name = gets.strip
 
 # put code here to create a new game, and start it
-Game.new()
+game = Game.new(player_name)
+
