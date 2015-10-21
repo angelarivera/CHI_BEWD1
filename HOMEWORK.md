@@ -52,14 +52,20 @@ No homework
 
 #### Lesson 2
 
+__NOTE: Does not count toward homework so do not bother with this if you haven't started it by now__
+
 - Create a Rails application. The application should have 2 controllers that render a view that link to each other. One of the controllers should pass data to the view and render it.
 
 ### Week 5
 
 #### Lesson 1
 
-TBD
+Due Oct. 27
+
+Create a Rails application for managing movies. You'll need a Movie model and a seeded database. See the Week 5 Lesson 1 homework folder for details.
 
 #### Lesson 2
 
-TBD
+Due Oct. 29th.
+
+Add controllers to your movie app and add the ability to view, add, and update movies. See the Week 5 Lesson 2 homework folder for details.
