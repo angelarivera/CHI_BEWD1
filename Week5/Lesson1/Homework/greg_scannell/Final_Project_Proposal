@@ -1,0 +1,5 @@
+## For my final CHI BEWD project my goal is to create a web app that integrates with the API of two
+## of the web apps my company works with. I will utilize the Canvas (www.gocanvas.com) API to pull data
+## with regards to inspections, and the Harvest (www.getharvest.com) API to pull data on all other job
+## tasks. The user will be able to select a client, time frame, and variety of tasks. My web app will
+## then return those tasks for the user for the selected client and time frame. 
