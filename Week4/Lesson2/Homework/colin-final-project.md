@@ -3,9 +3,9 @@ BEWD: FINAL PROJECT
 
 #DESCRIPTION
 
-https://sockets.io, a bandcamp for front-end developers.
+https://datadock.io, a bandcamp for front-end developers.
 
-A front-end interface like Google, where you enter a URL and the site analyzes it for all web technologies being used. This can be accomplished using a Ruby gem WAPPALYZER.
+DataDock has a front-end interface like Google, where you enter a URL and the site analyzes it for all web technologies being used. This can be accomplished using a Ruby gem WAPPALYZER.
 
 Home page has open access to everyone and lets you analyze any site. After analyzing and giving you site info, you get a prompt to create an account to start sharing with others. 
 
