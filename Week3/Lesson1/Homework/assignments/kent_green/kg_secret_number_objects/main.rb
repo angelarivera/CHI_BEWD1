@@ -8,6 +8,16 @@
 # is to practice your knowledge of object oriented programming.
 #
 ###############################################################################
+# Lets create an Object Oriented version of our Secret Number Game.
+#
+# Your updated game should have 4 classes (Main, SecretNumber, Game and Player)
+#
+# Below is a description of each class and some guidelines for each.
+#
+# Main
+#	The main class is where the game begins. This class should tell the player who made it.
+#	Ask the player for their name and instantiate the Game class.
+#
 # SecretNumber
 #   This class should initiate an array of numbers that range between 1 - 10.
 #   Use a method from the array class to select a random element from that array. This random number will be the secret number.
@@ -32,39 +42,21 @@
 
 $:.unshift (File.dirname(__FILE__))
 require 'lib/game'
-
-class Main
-
-
-	def play
-		# Create the game class and assign:
-		# - Number of guesses the player has
-		# - The range of numbers to guess from
-		game = Game.new(3, 10)
+require 'lib/person'
+require 'lib/secret_number'
 
 
-		# Welcome the player to the game
-		game.welcome_to_the_game
+# here's the  Welcome-message
+puts 'Welcome to Secret Number, the game where you guess a secret number!'
+puts '~a kent green joint~'
 
-		# Variable to determine if the player would like to play another round
-		another_round = "y"
+# put code here ask the user for their name, and save it
+def create_player
+ puts "What is your name?" 
+ name = gets.strip
 
-		while another_round == "y"
-			another_round = game.play_round
-		end
-
-		game.goodbye
-	end
-	
+ Person.new(name)
 end
 
-main = Main.new()
-main.play
-
-## FEEDBACK
-# Excellent work! You went beyond the basics. I really
-# like the ability to start a new game at the end. You
-# obviously get this stuff and I'm guessing you're doing
-# a lot of Googling for how to do stuff which is a great
-# habit to get into.
-
+# put code here to create a new game, and start it
+Game.new()

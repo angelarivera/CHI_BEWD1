@@ -1,0 +1,13 @@
+# Creates an Apartment class
+#
+class Apartment
+	attr_accessor :name, :apt_sqft, :apt_bedrooms, :apt_bathrooms, :rent, :renter
+
+	def initialize(name, apt_sqft, apt_bedrooms, apt_bathrooms)
+		@name = name
+		@apt_sqft = apt_sqft
+		@apt_bedrooms = apt_bedrooms
+		@apt_bathrooms = apt_bathrooms
+	end
+
+end

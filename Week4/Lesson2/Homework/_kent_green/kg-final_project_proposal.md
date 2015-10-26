@@ -1,3 +1,20 @@
+Kent Green CHI_BEWD1 Final Project proposal
+
+I'd like to complete a simple payments application, where a user can sign up, store a card, and pay for widgets. I'd like to do this against the Braintree sandbox (as it's the company I work for). 
+> For the About page, I could build it out, or propose it as a simple checkout model other people could adopt
+> User accounts would be part of it, as I'd want to tokenize cards so they could be used again
+> It would also check for invalid data, maybe not luhn checks on cc numbers but maybe things like expiration dates in the past
+
+
+
+
+
+
+
+
+
+#########################
+
 BEWD: FINAL PROJECT
 --------
 
@@ -44,38 +61,3 @@ Your instructor and T.As will provide feedback on how well you execute best prac
 
 ##GRADING
 A project is considered satisfactory if it meets all core requirements. Anything extra is encouraged. 
-
-## Project Ideas
-
-These are projects others have done in paste courses
-
-* [Travld](http://glacial-everglades-2256.herokuapp.com/)
-
-* [Talent Eyes](http://talenteyes.heroku.com) 
-
-* [Stringer Clips](obscure-depths-9645.herokuapp.com) 
-
-* [Game Of Thrones Trivia](http://enigmatic-ravine-9938.herokuapp.com/)
-
-* [Brew Days](https://mighty-hollows-1449.herokuapp.com)
-
-* [Fitness Point](http://fitnesspoint.herokuapp.com/)
-
-* [Engage](http://lecture-engage.herokuapp.com) 
-
-* [Queue](http://shielded-thicket-7569.herokuapp.com/)
-
-* [Notebook](http://mighty-journey-3205.herokuapp.com/)
-
-* [GradScore](http://protected-crag-2848.herokuapp.com/)
-
-* [Reckloose Entertainment](http://quote.reckloose.com/users/sign_in)
-
-* [Door-to-Door Donations](http://adamoverstreet-final-project.herokuapp.com/users/sign_in)
-
-* [Where You've Been](https://polar-dawn-2496.herokuapp.com/)
-
-* [Geek Therapy](http://geektherapy.io/welcome)
-
-* [Shot Spot App](https://github.com/gortega56/Shot_Spot_App)
-

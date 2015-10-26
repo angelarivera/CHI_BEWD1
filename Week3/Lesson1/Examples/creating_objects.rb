@@ -102,6 +102,7 @@
 #####################################################################################################
 # How about adding the grade_status method to our class?
 # What's up with the `attr_accessor`? http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
+
 # class Student
 #   attr_accessor :name, :major, :course, :grade
 
@@ -139,7 +140,6 @@
 # puts "#{pepe.name} has #{pepe.grade_status} #{pepe.course}"
 # puts "#{edward.name} has #{edward.grade_status} #{edward.course}"
 
-
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
@@ -150,6 +150,14 @@
 
 class Student
   attr_accessor :name, :major, :course, :grade
+
+ def initialize(name, major, course, grade)
+ 	@name = name
+ 	@major = major
+ 	@course = course
+ 	@grade = grade
+ end
+
 
   def initialize(name, major, course, grade)
     @name = name
@@ -178,6 +186,7 @@ jimmy = Student.new("Jimmy Mazzy", "Math", "Math", "A")
 pepe = Student.new("Pepe Phaenagrotis", "Music", "Math", "C")
 edward = Student.new("Edward Ellis", "Math", "Math", "C")
 
-# puts jimmy
-# puts pepe
-# puts edward
+puts jimmy
+puts pepe
+puts edward
+

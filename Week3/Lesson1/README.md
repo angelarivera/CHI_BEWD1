@@ -5,6 +5,8 @@
 ## [EXIT TICKETS](https://docs.google.com/forms/d/1f3uiOqDMThtl77Vwm62KeNyBse41Ult93d0LjoyYt9A/viewform)
 
 [You can find today's exit ticket here.](https://docs.google.com/forms/d/1f3uiOqDMThtl77Vwm62KeNyBse41Ult93d0LjoyYt9A/viewform)
+<<<<<<< HEAD
+=======
 
 ## Homework
 
@@ -29,3 +31,4 @@ __Secret Number Objects__
 This is the same idea as the Apartment assignment except this time I'm not giving you guys the answer until next class.
 
 __Due date:__ Oct. 13th
+>>>>>>> 481521fde066e74822b9af9081b575ef96939b3c
