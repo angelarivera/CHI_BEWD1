@@ -8,6 +8,10 @@ module Upvotable
   end
 end
 
+#if it's in an external file, this will not work but demonstrates syntax. This looks for upvotes.rb in the same folder.
+# require_relative 'upvotes'
+#end external file reference
+
 class Photo
   attr_reader :photographer, :resolution, :upvotes
 
@@ -32,15 +36,10 @@ class Story
   end
 end
 
-<<<<<<< HEAD
-story = Story.new 
+story = Story.new ("title", "author")
 story.upvote! 
+puts story.upvotes
 
-photo = Photo.new 
-=======
-story = Story.new
-story.upvote!
-
-photo = Photo.new
->>>>>>> 92f0683b04bbdad79cd7d3d8953c2880cccbb89d
+photo = Photo.new ("photoname", "reallybigresolution")
 photo.downvote!
+puts story.downvotes

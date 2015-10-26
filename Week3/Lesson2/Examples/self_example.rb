@@ -1,5 +1,9 @@
 class NewsPaper
+<<<<<<< HEAD
+attr_accessor :stories
+=======
   attr_accessor :stories
+>>>>>>> 92f0683b04bbdad79cd7d3d8953c2880cccbb89d
 
   def initialize
     @stories = []
@@ -14,6 +18,14 @@ class NewsPaper
     self.stories << story
   end
 end
+<<<<<<< HEAD
+story = NewsPaper.generate_random_story #=> "This random event happened on day 20 of this month." 
+
+paper = NewsPaper.new 
+paper.add_story(story) 
+
+p paper.stories #=> ["This random event happened on day 20 of this month."]
+=======
 
 #story = NewsPaper.generate_random_story #=> "This random event happened on day 20 of this month." 
 
@@ -39,3 +51,4 @@ end
 # p paper.stories #=> ["This random event happened on day 20 of this month."]
 # puts "================="
 # p paper2.stories
+>>>>>>> 92f0683b04bbdad79cd7d3d8953c2880cccbb89d

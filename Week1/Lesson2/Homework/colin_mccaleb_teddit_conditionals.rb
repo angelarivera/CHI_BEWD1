@@ -5,16 +5,19 @@
 # Where you see comments (lines that begin with #) replace it with code so that the program works.
 
 def get_input
-  gets.information
+   gets.strip
 end
 
+start_upvotes = 1
+
 def calculate_upvotes(story, category)
-    if story = "cats" 
-    	upvotes x 5
-    elsif story = "bacon" 
-    	upvotes x 6
-    elsif story = "food" 
-    	upvotes x 3
+    if story.include? "cats" 
+    	upvotes = 1 * 6
+    elsif story.include? "bacon" 
+    	upvotes = 1 * 8
+    else story.include? "food"
+    	upvotes = 1 * 3
+    end
         # If the Story is about cats multiply the upvotes by 5
         # If the Story is about bacon multiply the upvotes by 8
         # If the Story is about Food it gets 3 times the upvotes.
