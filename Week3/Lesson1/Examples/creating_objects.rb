@@ -18,11 +18,11 @@
 #  pepe[:course] = "Math"
 #  pepe[:grade] = "C"
 # #
-#  edward = {}
-#  edward[:name] = "Edward Ellis"
-#  edward[:major] = "Math"
-#  edward[:course] = "Math"
-#  edward[:grade] = "D"
+# edward = {}
+# edward[:name] = "Edward Ellis"
+# edward[:major] = "Math"
+# edward[:course] = "Math"
+# edward[:grade] = "D"
 # #
 # def grade_status(student)
 #   if student[:grade] == "F"
@@ -55,6 +55,10 @@
 ###
 # class Student
 #  attr_accessor :name, :major, :course, :grade
+# end
+
+# class Student
+#   attr_accessor :name, :major, :course, :grade
 # end
 
 # def grade_status(student)
@@ -174,6 +178,6 @@ jimmy = Student.new("Jimmy Mazzy", "Math", "Math", "A")
 pepe = Student.new("Pepe Phaenagrotis", "Music", "Math", "C")
 edward = Student.new("Edward Ellis", "Math", "Math", "C")
 
-puts jimmy
-puts pepe
-puts edward
+# puts jimmy
+# puts pepe
+# puts edward
