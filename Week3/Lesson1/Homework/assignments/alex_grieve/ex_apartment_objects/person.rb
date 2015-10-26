@@ -9,10 +9,4 @@ class Person
 		@credit_score = credit_score
 		@gender = gender
 	end
-
-	# Gracefully return the name if asked
-	def to_s
-		"#{self.name}"
-	end
 end
-

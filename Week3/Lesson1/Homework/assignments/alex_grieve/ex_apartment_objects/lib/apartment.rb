@@ -23,5 +23,4 @@ class Apartment
 			puts "-------------------------------------------"
 		end
 	end
-
 end

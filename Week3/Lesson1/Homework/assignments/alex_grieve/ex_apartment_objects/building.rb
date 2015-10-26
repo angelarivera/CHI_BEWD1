@@ -10,9 +10,7 @@ class Building
 	end
 
 	def view_apartments
-		# Why is this requiring me to use .to_S?
-		# I thought the override would allow me to use #{apartments}?
-		apartments.each { |apartment| puts apartment.to_s }
+		apartments.each { |apartment| puts apartment }
 	end 
 
 end
