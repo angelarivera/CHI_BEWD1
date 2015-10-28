@@ -2,8 +2,8 @@
 ###########
 ###########
 #
-puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
-puts "Story: Man raised by wolverines, then eaten Current upvotes: 4"
+#puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
+#puts "Story: Man raised by wolverines, then eaten Current upvotes: 4"
 
 #Version 2 - Replace the story title and upvotes with variables.
 ###########
@@ -108,24 +108,24 @@ puts "Story: Man raised by wolverines, then eaten Current upvotes: 4"
 # ##########
 # ##########
 ##==================================================================================##
-# def print_welcome
-#   puts "Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!"
-# end
+ def print_welcome
+   puts "Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!"
+ end
 
-# def headline
-#   "Cat makes fortune by showing elderly how to play dice"
-# end
+ def headline
+   "Cat makes fortune by showing elderly how to play dice"
+ end
 
-# def get_upvotes
-#    puts "How many upvotes do you want to give this story?"
-#    gets.strip
-# end
+ def get_upvotes
+    puts "How many upvotes do you want to give this story?"
+    gets.strip
+ end
 
-# def story_stats(story, upvotes)
-#   "Story: #{story}, Current upvotes: #{upvotes}"
-# end
+ def story_stats(story, upvotes)
+   "Story: #{story}, Current upvotes: #{upvotes}"
+ end
 
-# print_welcome
-# puts headline
-# puts story_stats(headline, get_upvotes)
+ print_welcome
+ puts headline
+ puts story_stats(headline, get_upvotes)
 ##==================================================================================##

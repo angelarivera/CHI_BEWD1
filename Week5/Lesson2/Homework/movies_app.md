@@ -1,6 +1,4 @@
-We need to add these functions to the Movies app due by next Thursday:
+Try to get your shirt app to update a shirt.
 
-- View all movies in the database.
-- Add a new movie to the database.
-- Edit a movie in the database.
-- And search for a specific movie.
+Hint: You'll need the `update` method for this.
+

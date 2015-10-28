@@ -78,3 +78,4 @@ These are projects others have done in paste courses
 * [Geek Therapy](http://geektherapy.io/welcome)
 
 * [Shot Spot App](https://github.com/gortega56/Shot_Spot_App)
+

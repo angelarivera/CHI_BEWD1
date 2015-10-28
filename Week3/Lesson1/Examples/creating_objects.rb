@@ -18,11 +18,11 @@
 #  pepe[:course] = "Math"
 #  pepe[:grade] = "C"
 # #
-#  edward = {}
-#  edward[:name] = "Edward Ellis"
-#  edward[:major] = "Math"
-#  edward[:course] = "Math"
-#  edward[:grade] = "D"
+# edward = {}
+# edward[:name] = "Edward Ellis"
+# edward[:major] = "Math"
+# edward[:course] = "Math"
+# edward[:grade] = "D"
 # #
 # def grade_status(student)
 #   if student[:grade] == "F"
@@ -55,6 +55,10 @@
 ###
 # class Student
 #  attr_accessor :name, :major, :course, :grade
+# end
+
+# class Student
+#   attr_accessor :name, :major, :course, :grade
 # end
 
 # def grade_status(student)
@@ -98,6 +102,7 @@
 #####################################################################################################
 # How about adding the grade_status method to our class?
 # What's up with the `attr_accessor`? http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
+
 # class Student
 #   attr_accessor :name, :major, :course, :grade
 
@@ -135,7 +140,6 @@
 # puts "#{pepe.name} has #{pepe.grade_status} #{pepe.course}"
 # puts "#{edward.name} has #{edward.grade_status} #{edward.course}"
 
-
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
@@ -146,6 +150,14 @@
 
 class Student
   attr_accessor :name, :major, :course, :grade
+
+ def initialize(name, major, course, grade)
+ 	@name = name
+ 	@major = major
+ 	@course = course
+ 	@grade = grade
+ end
+
 
   def initialize(name, major, course, grade)
     @name = name
@@ -177,3 +189,4 @@ edward = Student.new("Edward Ellis", "Math", "Math", "C")
 puts jimmy
 puts pepe
 puts edward
+

@@ -15,3 +15,4 @@ class Person
 		"#{self.name}"
 	end
 end
+
