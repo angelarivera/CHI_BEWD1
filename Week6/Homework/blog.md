@@ -6,8 +6,6 @@ The City Times needs an app and has hired BEWD students to build it. They want t
 
 You will build Rewsly during lesson 11 & 12.
 
-####Time: 60 min
-
 Here are the features needed by next class.
 
 For now City times is only interested in linking to other news sources instead of writing their own news.
@@ -27,5 +25,3 @@ __Bonus__
 * Only display stories created today on the front page.
 
 Remember, Google is your friend!
-
-Happy coding :)
