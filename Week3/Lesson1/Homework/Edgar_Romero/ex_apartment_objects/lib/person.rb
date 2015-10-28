@@ -1,6 +1,4 @@
-# Create a person class
-# For this assignment we need to simply hold data
-# No methods are necessary
+#Person Class.
 class Person
 	attr_accessor :name, :credit_score, :gender
 
